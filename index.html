@@ -1,128 +1,427 @@
-<!DOCTYPE html>
-<!-- saved from url=(0043)https://gps-search-350400.an.r.appspot.com/ -->
-<html lang="">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-      <link rel="icon" href="https://gps-search-350400.an.r.appspot.com/favicon.ico">
-      <link rel="preconnect" href="https://fonts.googleapis.com/">
-      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-      <link href="./tag-demo_files/css2" rel="stylesheet">
-      <title>tag-demo</title>
-      <script src="./tag-demo_files/cb=gapi.loaded_0" async=""></script><script defer="defer" src="./tag-demo_files/chunk-vendors.8074cab4.js"></script><script defer="defer" src="./tag-demo_files/app.77aaddb2.js"></script>
-      <link href="./tag-demo_files/app.affe9a63.css" rel="stylesheet">
-      <script defer="" src="chrome-extension://jfklefhfehfnieocogkikebgcedfajkk/tracking_script.js" data-tool-id="0" data-profile="LTExMywxMSwtNjQsLTI2LC02NiwtNTksLTQzLDUzLC0xMDEsODAsNjcsLTExNywtMTA2LC0xMiwtNTksLTE3LDQsOTEsLTg1LDcwLDM0LC0zMCw3MCwtOTIsMTAxLC0xNiwxMjUsLTgxLC00MiwtMjEsLTQxLDI4LC0yMyw1MSwtNzgsNjAsNTMsLTEwNCw4NCw1MCwtMTQsLTk2LDgyLC0zNCwtNzQsLTc5LC0zMSw3OSwxMTAsOTQsNiwtNDksNDcsMTA0LC0xMjgsMjEsLTEwNyw5LDIyLC0zMiwyNCwtMTQsLTMxLC02OSwtODAsLTkzLC03OCw0Niw2Myw0MSw3NSwtMTA2LDk1LDM1LDg4LC0xMjYsLTgyLDMyLC02OCwxMjQsNiw3OSwtNzksNTIsMTAxLC0xMTEsMTE2LDU2LC00OSwtNTYsLTQsLTExNCwtMzQsODAsMTAsMTI3LDEyNiwxMjQsOTYsLTQ1LC0yOCw4MCw0MiwtNSw1NSwzMiwtMTE1LDExMSwxOSwtMTI3LC03NCwxMDcsMTgsLTk4LDExNywtODksMTQsLTksLTM1LDIyLC04MSwtNTQsMTIsLTg5LDIsMTQsNDEsNzQsNDMsNjcsLTExOCwtMiwtNjIsNTYsLTEyNywtOTksMCwtNzksMzQsLTk1LC0xMTEsLTY0LC04MywxOCwtODgsMTI0LDEyMiwtNjAsLTE4LDU4LDQ4LC02Miw3Niw5NSw4MywtOTUsOTIsLTEyMSwtNDMsLTcyLDQxLDEyMCwtMzksMTA1LC03NCw0MCwzNCwxOSwtNTEsLTg1LDYwLDEwNCw0NiwxMDksLTExNiw5OSwtNzYsLTc5LC0yNSwtMzgsODksNDIsLTExNiw5MCw2MCwtMTA2LC02LDUxLC0yMSwyNiwtNTUsLTcxLC0xMjEsLTk2LDMxLC0zOCwxMDUsLTEwMSw4MSwyNSwxMywtODgsLTI4LC0xMjAsNCwtNzksNTIsMjksLTEyNiwxMTEsLTMzLC05MiwtMjIsLTgxLC00MiwtMTYsMTA0LDkxLC0xMCwxMDIsLTUzLDEwNywxMTIsMzgsMTE5LDEwMywxMTEsLTEwNiwzNiw2NSw5MiwtNzUsLTExMiwtMTIsMTA1LDk3LDQyLC0yOCwtMTE5LC00NCwtMjIsMTIxLC0xMDYsMTE3LDExNCwtOTYsLTExMSwtNDgsLTEzLDg5LC0xMDIsLTExMSwtOTksLTY2LC0xMDUsNTQ=" data-backend-env="PROD" data-extension-version="Tool Analytics:1.0.21"></script><script type="text/javascript" charset="UTF-8" src="https://apis.google.com/js/client.js?onload=_gapiProviderCallback_78398" gapi_processed="true"></script>
-   </head>
-   <body>
-      <noscript><strong>We're sorry but tag-demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
-      <div id="app" data-v-app="">
-         <div class="swiper swiper-no-swiping swiper-initialized swiper-horizontal mySwiper swiper-backface-hidden">
-            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-516px, 0px, 0px); transition-delay: 0ms;">
-               <div class="swiper-slide swiper-slide-prev" id="slide1" style="width: 516px;">
-                  <div class="language-choice">
-                     <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMvSURBVHgBzVmLcdswDKVyGUDdgJ0g3qDqBM0G0QbxBlInsDuBuoHaCaRMUHcCaQO7E7BEDNgQLIGkk1797nDykQ8fghQF0pm5Es65wj8+eVmh5CiAg5cRny9e+izLevOv4YPKvVRe9i4dg5fGizXvDQxsM+P0FzoldCiEFjkSzbsF6g09ioyBwzUEjf0Vy5DFwQzYtkEOtJesnfileQtE1sBgIfot6y9Ze8HapY4MdGNSgVnomJEtZUzwaPqamb4W+7oF+1tmv52zrwXYMuX1AqdkHDvTD9ndz2WRcdbMRhcb3GZu2mZ43VL2GGcbci4Gqk+3INcKb6Vlj/H4Gi0UHs/kk2ZsCGUFuU3stLBMbwM8WlawLHLN6eACe5Q7r63ShAMsVcdnXs7sbmTn7HaxYIhvIcE3TzguAtxa2r7HvkoQS8XOF3yOXmATNxGAbzI4fA7MzoH9ht2jzjCgwT80xf+Bgy8wPtxj2i029hGKBT53ZjriWL0+kpu/xsbmPeaNXKWsP6aXMz0bwe+QW9+ZY00H+G3CONV7Pv3R2UMu8VcRKhTL6o45HSMUbQJXYsRnTOZ3+Hy4Y053EYrETVl7RujYBG7OM3hLmAR404AAT9Ga28MhNcAxgSuR8jLSmz5CgDvRqCFloUtYcprAfc0g7TkPEYo0mDx1ozbTM3MIFMtLhp86+or0EcpFApcAwa2u8PGZioW9ub2XZPRfoI9Ubn0z55ILypw/iiKUW4/muJa+mjiAbevlh5efAS5V8/2pRXzMa03bHQ/ywQp5wXYR4C6fFN35BJZSmpcmHCA5HQI8/UwkHLcBY11CidYuOp3yGhqIWyrJ2PQBKsVY1LnETc86VuFVjFeawEj4lcSTwhuQUyucJpQ98MH8bU0M3PReplrgqMfJmOz59mfGUZeVVIT1yO9nGjd//zIsZcgp2XOX942dS7k8Yob4dA9yfbiFazanbBfu8votblqVIGcvHskxG8SAmeHbRY0cujrmdvburReYLEhw+t1dAu4HWzFV/Mq3EUGdsuaumdKEQOechgAZq1MDy8yVcMc1BwLHVnBqzbSkAoHyDMq5q/+G+AtL+w1BHxnjeQAAAABJRU5ErkJggg==" alt=""></div>
-                     <!---->
-                  </div>
-                  <div class="background-img background-img-top">
-                     <div><span><img src="./tag-demo_files/home-top.9fe2dbb4.png" alt=""></span></div>
-                  </div>
-                  <div class="background-img background-img-bottom">
-                     <div><span><img src="./tag-demo_files/home-bottom.6d96ba2a.png" alt=""></span></div>
-                  </div>
-                  <div>
-                     <h1>广告文案生成器</h1>
-                     <p>助您轻松创作高转化文案</p>
-                  </div>
-                  <div style="border: 1px">
-                     <p>平均曝光率</p>
-                  </div>
-                  <div><button class="next-page-button">Start &gt; </button></div>
-                  <!---->
-               </div>
+<html lang=""><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="icon" href="https://gps-search-350400.an.r.appspot.com/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <title>tag-demo</title>
+    <link href="./tag-demo_files/app.affe9a63.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+ </head>
+ <body>
+     <div id="app" data-v-app="">
+       <div class="swiper swiper-no-swiping swiper-initialized swiper-horizontal mySwiper swiper-backface-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-prev" id="slide1" style="">
+
+                <div class="background-img background-img-top">
+                   <div style="
+  margin: 0px;
+  background: url();
+"><span><img src="./tag-demo_files/19.png" alt="" style="
+  margin: -200px -150px;
+  transform: rotate(-0.18turn);
+  width: 700px;
+"></span></div>
+                </div>
+                <div class="background-img background-img-bottom">
+                   <div><span><img src="./tag-demo_files/18.png" alt="" style="
+  float: right;
+  width: 200px;
+  margin: -50px -30px;
+  transform: rotate(-0.3turn);
+"></span></div>
+                </div>
+                <div style="
+    margin-top: -40px;
+    padding: 10px;
+">
+                    <h1>广告文案生成器<br><span style="
+                        color: #5BB974;
+                        font-weight: bold;
+                        margin: 10px;
+                    ">助您轻松创作<br>高转化文案</span></h1>
+                </div>
+
+                <div class="slide1border">
+                    <div class="slide1borderinside" style="
+     height: 70px;
+ ">
+                         <span style="
+                             position: absolute;
+                             margin-top: 10px;
+                             margin-left: 0px;
+                         ">平均曝光率<br>提升至</span>
+    <p style="
+    position: absolute;
+    margin-left: 70px;
+    font-size: 38px;
+    font-weight: normal;
+    margin-top: 5px;
+">50</p>
+    <p style="
+    position: absolute;
+    margin-left: 118px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 25px;
+">%</p>
+    <img src="./tag-demo_files/13.png" alt="" style="
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 125px;
+">
+                         
+                         <span style="
+                             position: absolute;
+                             margin-left: 160px;
+                             margin-top: 10px;
+                         ">点击率<br>提升近</span>
+    <p style="
+    position: absolute;
+    margin-left: 210px;
+    font-size: 38px;
+    font-weight: normal;
+    margin-top: 5px;
+">20</p>
+    <p style="
+    position: absolute;
+    margin-left: 258px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 25px;
+">%</p>
+    <img src="./tag-demo_files/13.png" alt="" style="
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 265px;
+">
+
+                     </div>
+ 
+ 
+                     <div class="slide1borderinside" style="
+     height: 90px;
+ ">
+                         <p>懂文案，更懂转化</p>
+                         
+                         <span>基于您的游戏信息，历史投放表现，目标受众分析等为您批量创作转化率更高的广告文案。</span>
+                     </div>
+ 
+                    <div class="slide1borderinside" style="
+     height: 100PX;
+     border: none;
+ ">
+                         <p>快启动</p>
+                         
+                         <span style="">支持集成在企业系统/平台，两周完成部署。</span>
+                     </div>
+ 
+ 
+                 </div>
+
+
+                <div style="    position: absolute;
+                margin-top: 520px;">
+                    <button id="buttonNext1" class="next-page-button">点击体验，助力创意增长</button>
+                </div>
+                
+                <!---->
+             </div>
 
 
 
-              <div> test 2nd 
-              </div>
-               <div class="swiper-slide swiper-slide-active introActive" id="slide-intro" style="width: 516px;">
-                  <div class="intro-content">
-                     <h1>Advertisers see up to</h1>
-                     <div class="bigNumber">20% </div>
-                     <h1>CTR increase after optimizing Ads Text Creatives</h1>
-                  </div>
-                  <div class="intro-overlay"></div>
-                  <!---->
-               </div>
-               <div class="swiper-slide swiper-slide-next" id="slide2" style="width: 516px;">
-                  <div><button class="last-page-button">&lt; Back</button></div>
-                  <div>
-                     <h1>Please choose your industry</h1>
-                  </div>
-                  <div class="industry">
-                     <div class="next-page-button industry2">Apparel</div>
-                     <div><img src="./tag-demo_files/apparel.98f0d1ad.png"></div>
-                  </div>
-                  <div class="industry">
-                     <div class="next-page-button industry2">Home&amp;Garden</div>
-                     <div><img src="./tag-demo_files/h&amp;g.b1b14a76.png"></div>
-                  </div>
-                  <div class="industry">
-                     <div class="next-page-button industry2">Travel</div>
-                     <div><img src="./tag-demo_files/travel.971846cd.png"></div>
-                  </div>
-                  <div></div>
-                  <!---->
-               </div>
-               <div class="swiper-slide" id="slide3" style="width: 516px;">
-                  <div><button class="last-page-button">&lt; Back</button></div>
-                  <div>
-                     <h1>Please choose your brand</h1>
-                  </div>
-                  <div class="brand-list-container"></div>
-                  <!---->
-               </div>
-               <div class="swiper-slide" id="slide5" style="width: 516px;">
-                  <div><button class="last-page-button">&lt; Back</button></div>
-                  <div><img src="./tag-demo_files/generate.117197c8.gif"></div>
-                  <div class="gemini-name">Gemini</div>
-                  <div class="gemini-intro">Leverage Google's most advanced AI Gemini to create personalized, multi-language text creatives at scale.</div>
-                  <div><button class="generate-button"><span>Generate</span></button></div>
-                  <!---->
-               </div>
-               <div class="swiper-slide" id="slide-animation" style="width: 516px;">
-                  <div class="gemini-generate-logo"><img src="./tag-demo_files/analysis.554e92f7.gif" alt=""></div>
-                  <div class="gemini-intro">Analyzing...</div>
-                  <div class="element element-1 animatePause"><button class="generate-button"><span>Industry Info</span></button></div>
-                  <div class="element element-2 animatePause"><button class="generate-button"><span>Company Info</span></button></div>
-                  <div class="element element-3 animatePause"><button class="generate-button"><span>Ads Performance</span></button></div>
-                  <div class="element element-4 animatePause"><button class="generate-button"><span>Media Data</span></button></div>
-                  <div class="element element-5 animatePause"><button class="generate-button"><span>Best Practice</span></button></div>
-                  <!---->
-               </div>
-               <div class="swiper-slide" id="slide6" style="width: 516px;">
-                  <div class="result">
-                     <p>Supports 35 languages, to stimulate the interest of global target audiences</p>
-                  </div>
-                  <!---->
-               </div>
-               <div class="swiper-slide" id="slide7" style="width: 516px;">
-                  <div class="preview">
-                     <div class="preview-url"><span>Ad</span> - https://www.example-business.com </div>
-                     <div class="preview-title">Preview</div>
-                     <div class="preview-content preview-content-1"></div>
-                     <div class="preview-content preview-content-2"></div>
-                     <div class="preview-content preview-content-3"></div>
-                     <div class="preview-content preview-content-4"></div>
-                  </div>
-                  <div><button class="next-page-button">Start again &gt; </button></div>
-                  <!---->
-               </div>
-            </div>
-            <!----><!---->
-            <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"><span class="swiper-pagination-progressbar-fill" style="transform: translate3d(0px, 0px, 0px) scaleX(0.25) scaleY(1); transition-duration: 300ms;"></span></div>
+
+            
+            <div class="swiper-slide swiper-slide-prev" id = "slide2"  >
+                 
+
+                    <div class="background-img background-img-top">
+                       <div style="
+      margin: 0px;
+      background: url();
+    "><span>
+           <img src="./tag-demo_files/111.png" alt="" style="
+           margin: -190px -150px;
+           width: 700px;
+         ">
+    </span></div>
+                    </div>
+                    <div class="background-img background-img-bottom">
+                        <div><span><img src="./tag-demo_files/17.png" alt="" style="
+       float: right;
+       margin: -90px -80px;
+       transform: rotate(-0.32turn);
+     "></span></div>
+                     </div>
+
+                    <div>
+                       <h1>一键定制广告文案</h1>
+  
+                    </div>
+
+                    <div> 
+                    
+                        <button id="buttonNext2" class="next-page-button" style="
+    background-color: #1E8E3E;
+    color: #ffffff;
+    font-family: Google Sans;
+">Start &gt; </button>
+                    
+                    
+                    </div>
+                
+
+                <!---->
+             </div>
+
+
+             <div class="swiper-slide swiper-slide-prev" id="slide3" style="">
+                 
+
+                <div class="background-img background-img-top">
+                   <div style="
+  margin: 0px;
+  background: url();
+"><span>
+    <img src="./tag-demo_files/111.png" alt="" style="
+    margin: -190px -150px;
+    width: 700px;
+  ">
+
+</span></div>
+                </div>
+
+                <div>
+                   <h1>Please choose your brand</h1>
+
+                </div>
+
+
+                <div class="industry" style="
+    border-color: #789bd7;
+">
+                    <div><button id="buttonRPG" class="next-page-button">RPG</button></div>
+                    <span>RPG is xxxxxxxxxxxxxx xxxx xxxxx xxxxx xxxxx xxxxx xxxx.</span>
+                    <div><img src="./tag-demo_files/14.png"></div>
+                    
+                
+                </div>
+                 <div class="industry" style="
+    border-color: #e3bb4d;
+">
+                    <div><button id="buttonSLG" class="next-page-button">SLG</button></div>
+                    <span>RPG is xxxxxxxxxxxxxx xxxx xxxxx xxxxx xxxxx xxxxx xxxx.</span>
+                    <div><img src="./tag-demo_files/112.png"></div>
+                
+                 </div>
+                 <div class="industry" style="
+    border-color: #94c0a5;
+">
+                    <div><button id="buttonCasual" class="next-page-button">Casual</button></div>
+                    <span>RPG is xxxxxxxxxxxxxx xxxx xxxxx xxxxx xxxxx xxxxx xxxx.</span>
+                    <div><img src="./tag-demo_files/18.png"></div>
+                    
+                 </div>
+
+
+
+                
+                
+
+                <div>
+                    <button id="buttonNext3" class="next-page-button" style="
+    margin: 10px -70px;
+">&lt; Back  </button>
+                
+                </div>
+            
+
+            <!---->
          </div>
-      </div>
-      <iframe id="apiproxy2e922901e48e8edc6592eeb9d6b6e781b7ccaf7e0.3533214241" name="apiproxy2e922901e48e8edc6592eeb9d6b6e781b7ccaf7e0.3533214241" src="./tag-demo_files/proxy.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px; display: none;"></iframe>
-   </body>
-</html>
+
+         <div class="swiper-slide swiper-slide-prev" id = "slide4" style="display: none;">
+                 
+
+            <div class="background-img background-img-top">
+               <div style="
+margin: 0px;
+background: url();
+"><span>
+    <img src="./tag-demo_files/111.png" alt="" style="
+      margin: -190px -150px;
+      width: 700px;
+    ">
+</span></div>
+            </div>
+
+            <div>
+               <h1>支持35种语言，<br>激发全球目标受众兴趣</h1>
+
+            </div>
+
+            <div class="slide4border">
+                <span>
+                    Leorem ipsum dolor eorem ipsum dolo eorem ipsum dolo eorem ipsum dol
+                </span>
+
+                <button id="buttonNext4" class="next-page-button">应用 </button>
+            </div>
+            <div class="slide4border">
+                <span>
+                    Leorem ipsum dolor eorem ipsum dolo eorem ipsum dolo eorem ipsum dol
+                </span>
+
+                <button id="buttonNext4" class="next-page-button">应用 </button>
+            </div>
+            <div class="slide4border">
+                <span>
+                    Leorem ipsum dolor eorem ipsum dolo eorem ipsum dolo eorem ipsum dol
+                </span>
+
+                <button id="buttonNext4" class="next-page-button">应用 </button>
+            </div>
+            <div class="slide4border">
+                <span>
+                    Leorem ipsum dolor eorem ipsum dolo eorem ipsum dolo eorem ipsum dol
+                </span>
+
+                <button id="buttonNext4" class="next-page-button">应用 </button>
+            </div>
+            <div class="slide4border">
+                <span>
+                    Leorem ipsum dolor eorem ipsum dolo eorem ipsum dolo eorem ipsum dol
+                </span>
+
+                <button id="buttonNext4" class="next-page-button">应用 </button>
+            </div>
+        
+            
+
+        <!---->
+     </div>
+
+
+
+
+
+
+     
+     <div class="swiper-slide swiper-slide-prev" id="slide5" style="display: none;">
+                 
+
+        <div class="background-img background-img-top">
+           <div><span><img src="./tag-demo_files/RPG1.png" alt="" style="margin: -200px -150px;margin-top: 0;width: 700px;"></span></div>
+        </div>
+
+        <div id="slide5border">
+            <img src="./tag-demo_files/RPG10.png" alt="" style="
+  margin: -20px 130px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+">
+           <h1>RPG Game <br>Name</h1>
+
+<span>Leorem ipsum dolor eorem ipsum dolo eorem ipsum dolo eorem ipsum dolo</span><img src="./tag-demo_files/RPG5.png" alt="" style="
+  margin: 20px 80px;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+">
+<img src="./tag-demo_files/RPG9.png" alt="" style="
+  margin: 20px 180px;
+  position: absolute;
+  width: 1px;
+  height: 35px;
+"><img src="./tag-demo_files/RPG6.png" alt="" style="
+  margin: 20px 230px;
+  position: absolute;
+  height: 40px;
+  width: 50px;
+">
+
+<img src="./tag-demo_files/16.png" alt="" style="
+  margin: 80px 130px;
+  position: absolute;
+  height: 20px;
+  width: 100px;
+">
+<img src="./tag-demo_files/RPG7.png" alt="" style="
+  margin: 120px 70px;
+  position: absolute;
+  height: 35px;
+  width: 90px;
+">
+<img src="./tag-demo_files/RPG8.png" alt="" style="
+  margin: 120px 210px;
+  position: absolute;
+  height: 35px;
+  width: 90px;
+">
+
+        </div>
+
+        <div><button id="buttonNext5" class="next-page-button"> Start Again </button></div>
+    
+
+    <!---->
+ </div>
+
+        <div><button id="buttonNext5" class="next-page-button"> Start Again </button></div>
+    
+
+    <!---->
+ </div>
+
+
+          </div>
+          <!----><!---->
+                </div>
+    </div>
+    <script>
+
+        $("#buttonNext1").click(function(){
+            $("#slide1").slideUp();
+            $("#slide2").slideDown();
+        });
+        $("#buttonNext2").click(function(){
+            $("#slide2").slideUp();
+            $("#slide3").slideDown();
+        });
+        $("#buttonNext3").click(function(){
+            $("#slide3").slideUp();
+            $("#slide2").slideDown();
+        });
+        $("#buttonNext4").click(function(){
+            $("#slide4").slideUp();
+            $("#slide5").slideDown();
+        });
+        $("#buttonNext5").click(function(){
+            $("#slide5").slideUp();
+            $("#slide1").slideDown();
+        });      
+        $("#buttonRPG").click(function(){
+            $("#slide3").slideUp();
+            $("#slide4").slideDown();
+        });    
+        $("#buttonSLG").click(function(){
+            $("#slide3").slideUp();
+            $("#slide4").slideDown();
+        });    
+        $("#buttonCasual").click(function(){
+            $("#slide3").slideUp();
+            $("#slide4").slideDown();
+        });     
+        
+        </script>
+
+</body></html>
