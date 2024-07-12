@@ -6,7 +6,7 @@
 }
 
 :root {
-    --swiper-theme-color: #777777;
+    --swiper-theme-color: #007aff
 }
 
 :host {
@@ -61,7 +61,7 @@
     height: 100%;
     position: relative;
     transition-property: transform;
-    display: block
+    display: block;
 }
 
 .swiper-slide-invisible-blank {
@@ -474,7 +474,7 @@ button.swiper-pagination-bullet {
 }
 
 * {
-    font-family: Google Sans,Noto Sans CJK SC,Noto Sans JP,Arial,sans-serif
+    font-family: Google Sans,Noto Sans CJK SC,Noto Sans JP,Arial,sans-serif;
 }
 
 body,html {
@@ -482,14 +482,26 @@ body,html {
     height: 100%
 }
 
-@media (min-width: 1200px) {
+
+@media (min-width: 900px ) {
     #app {
         aspect-ratio:9/16;
-        width: auto;
+        width: 400px;
+        height:100%;
         margin: auto;
         overflow: hidden
     }
 }
+/*@media screen and (max-width: 900px) and (min-width: 500px), (min-width: 1100px) {
+    #app {
+        aspect-ratio:9/16;
+        width: 400px;
+        height:100%;
+        margin: auto;
+        overflow: hidden
+    }
+}
+*/
 
 body {
     background: #eee;
@@ -605,19 +617,19 @@ h2 {
     line-height: 48px;
     padding: 0 30px;
     margin: 30px;
-    background-color: #4285f4;
-    color: #eee;
+    background-color: #A8DAB5;
+    color: #0D652D;
     border: 0;
     border-radius: 30px
 }
 
 .industry {
-    width: 80%;
+    width: 70%;
+    height: 90px;
     border: 2px solid #4285f4;
-    background-color: #fff;
     border-radius: 20px;
     padding: 10px;
-    margin-bottom: 30px
+    margin-bottom: 20px;
 }
 
 .industry .next-page-button {
@@ -754,19 +766,23 @@ h2 {
 #slide1 .next-page-button {
     background-color: #A8DAB5;
     color: #0D652D;
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 #slide1 p {
-    padding: 0 30px;
-    color: #eee
+    color: #5BB974;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 #slide2 {
-    background: #eaf9f9
+    background: #000;
 }
 
 #slide2 h1 {
-    color: #202124
+    /* color: #202124; */
 }
 
 #slide2 .industry .next-page-button {
@@ -774,16 +790,25 @@ h2 {
 }
 
 #slide3 {
-    background: #eaf9f9
+    background: #000000;
 }
 
 #slide3 h1 {
-    color: #202124
+    color: #eee;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: normal;
+    margin-top: -20px;
 }
 
 #slide3 .next-page-button {
-    margin-bottom: 10px;
-    margin-top: 10px
+    margin-top: -5px;
+    margin-left: -130px;
+    background-color: transparent;
+    color: #eee;
+    position: absolute;
+    font-weight: normal;
+    font-size: 19px;
 }
 
 .brand-list {
@@ -807,19 +832,18 @@ h2 {
 }
 
 #slide4 {
-    background: #eaf9f9
+    background: #000;
 }
 
 #slide4 h1 {
-    color: #202124
+    color: #eee;
 }
 
 #slide4 .next-page-button {
-    background-color: #4285f4
 }
 
 #slide5 {
-    background: #fff
+    background: #000;
 }
 
 #slide5 img {
@@ -1050,4 +1074,204 @@ h2 {
 .preview-content-4 {
     width: 60%;
     animation-delay: 3s
+}
+
+.slide1border 
+{
+    border: solid;
+    border-color: #A8DAB5;
+    width: 80%;
+    height: 320PX;
+    border-radius:10px;
+    color:#eee;
+    font-size:13px;
+    text-align: left;
+    margin-top: 20px;
+    }
+
+.slide1borderinside
+{
+    border-bottom:solid;
+    margin: 20px;
+    height: 50px;
+    border-color: #8dc59d;
+}
+
+.slide1borderinside p
+{
+    font-weight: bold;
+    font-size:15px;
+    color:#5BB974;
+    
+    
+}
+
+.industry span{
+    color: #aaa;
+    font-size: 13px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -145px;
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+}
+.industry img{
+    width: 100px;
+    height: 100px;
+    margin: -25px 200px;
+    position: absolute;
+}
+
+#slide3 #buttonRPG{
+    color: #789bd7;
+}
+#slide3 #buttonSLG{
+    color: #e3bb4d;
+}
+#slide3 #buttonCasual{
+    color: #94c0a5;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Kwp5MKg.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Nwp5MKg.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Bwp5MKg.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Awp5MKg.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94Yt3CwZ-Pw.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94YtwCwZ-Pw.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94Yt8CwZ-Pw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94Yt9CwZ-Pw.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/googlesans/v27/4UabrENHsxJlGDuGo1OIlLU94YtzCwY.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+#slide5border{
+    height: 430px;
+    width: 360px;
+    background: #fff;
+    color: #aaa;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+#slide5border h1{ 
+    color: #000;
+    margin-top:90px;
+}
+
+#slide5 .next-page-button{
+    color: #eee;
+    background-color: #1f8e3f;
+    font-weight: normal;
+}
+
+.slide4border{
+    background-color:#fff;
+    border:1px solid;
+    border-radius:5px;
+    width:350px;
+    height:80px;
+    margin:10px
+    
+}
+.slide4border button{
+    position:absolute;
+    margin-left: 80px;
+    width:80px;
+    border-radius:5px;
+    height:40px;
+    font-size:15px;
+    padding:0;
+    color:#fff;
+    margin-top: 15px;
+    background-color:#1b7f39
+}
+.slide4border span{
+    color:#333;
+    width:230px;
+    height:100px;
+    position:absolute;
+    margin-top:15px;
+    margin-left:-165px;
+    font-size:15px;
+    text-align:left
+    
 }
