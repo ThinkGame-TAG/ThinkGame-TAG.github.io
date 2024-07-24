@@ -99,7 +99,7 @@
     margin: 0px;
     background: url();
     "><span>
-    <img src="./tag-demo_files/111.png" alt="" style="margin: -130px -150px;width: 700px;">
+    <img src="./tag-demo_files/111.png" alt="" style="margin: -130px -150px;width: 100%;">
     </span></div>
     </div>
     <div class="background-img background-img-bottom">
@@ -135,7 +135,7 @@
     margin: 0px;
     background: url();
     "><span>
-    <img src="./tag-demo_files/111.png" alt="" style="margin: -130px -150px;width: 700px;">
+    <img src="./tag-demo_files/111.png" alt="" style="margin: -130px -150px;width: 100%;">
     
     </span></div>
     </div>
@@ -626,16 +626,16 @@
     <script>
     
     $("#buttonNext1").click(function(){
-    $("#slide1").fadeOut(200);
-    $("#slide2").hide().fadeIn(500); 
+    $("#slide1").fadeOut(0);
+    $("#slide2").slideDown(0);
     });
     $("#buttonNext2").click(function(){
     $("#slide2").fadeOut(200);
     $("#slide3").hide().fadeIn(500);
     });
     $("#buttonNext3").click(function(){
-    $("#slide3").fadeOut(0);
-    $("#slide2").slideDown(0);
+    $("#slide3").fadeOut(200);
+    $("#slide2").slideDown(500);
     });
     $("#buttonNext4,#buttonNext4-2,#buttonNext4-3,#buttonNext4-4,#buttonNext4-5").click(function(){
     $("#slide4").fadeOut(0);
