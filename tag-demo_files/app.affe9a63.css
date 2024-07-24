@@ -782,7 +782,8 @@ h2 {
 }
 
 #slide2 h1 {
-    /* color: #202124; */
+    font-size: 60px;
+    margin-top: -80px;
 }
 
 #slide2 .industry .next-page-button {
@@ -1289,3 +1290,10 @@ img.icon{
 
 
 
+button#buttonNext2{
+    font-size:30px;
+    width: 200px;
+    height: 70px;
+    border-radius: 100px;
+    margin-top: 60px;
+}
