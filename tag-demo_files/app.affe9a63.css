@@ -1293,10 +1293,9 @@ img.icon{
 
 
 #display,#display2,#display3{
-    padding: 0 50px;
+    padding:0 20px;
     font-size: 26px;
 }
-
 
 
 
@@ -1312,4 +1311,5 @@ button#buttonNext2{
     position: absolute;
     width: 200px;
     height: 200px;
+    border-radius: 30px;
 }
