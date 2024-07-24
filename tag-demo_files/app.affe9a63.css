@@ -483,7 +483,7 @@ body,html {
 }
 
 
-@media (min-width: 900px ) {
+/**@media (min-width: 900px ) {
     #app {
         aspect-ratio:9/16;
         width: 400px;
@@ -491,7 +491,7 @@ body,html {
         margin: auto;
         overflow: hidden
     }
-}
+}**/
 /*@media screen and (max-width: 900px) and (min-width: 500px), (min-width: 1100px) {
     #app {
         aspect-ratio:9/16;
@@ -625,11 +625,11 @@ h2 {
 
 .industry {
     width: 70%;
-    height: 90px;
+    height: 130px;
     border: 2px solid #4285f4;
     border-radius: 20px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .industry .next-page-button {
@@ -795,20 +795,20 @@ h2 {
 
 #slide3 h1 {
     color: #eee;
-    font-size: 30px;
+    font-size: 50px;
     padding: 20px;
     font-weight: normal;
     margin-top: -20px;
 }
 
 #slide3 .next-page-button {
-    margin-top: -5px;
-    margin-left: -130px;
+    margin-top: 0px;
+    margin-left: -230px;
     background-color: transparent;
     color: #eee;
     position: absolute;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .brand-list {
@@ -1102,11 +1102,11 @@ h2 {
 
 .industry span{
     color: #aaa;
-    font-size: 10px;
+    font-size: 18px;
     position: absolute;
-    margin-top: 40px;
-    margin-left: -130px;
-    width: 200px;
+    margin-top: 60px;
+    margin-left: -230px;
+    width: 330px;
     height: 50px;
     overflow: hidden;
     text-align: left;
@@ -1272,9 +1272,9 @@ h2 {
 img.icon{
     border: 1px solid #222;
     border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    margin: 15px 220px;
+    width: 100px;
+    height: 100px;
+    margin: 15px 365px;
 }
 
 .footnote{
