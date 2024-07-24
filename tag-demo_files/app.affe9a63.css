@@ -590,7 +590,7 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 50px;
     margin-left: 20px;
     margin-right: 20px
 }
@@ -838,6 +838,7 @@ h2 {
 
 #slide4 h1,#slide6 h1,#slide8 h1 {
     color: #eee;
+    font-size: 50px;
 }
 
 #slide4 .next-page-button,#slide6 .next-page-button,#slide8 .next-page-button {
@@ -1243,32 +1244,35 @@ h2 {
     background-color:#fff;
     border:1px solid;
     border-radius:5px;
-    width:350px;
-    height:80px;
-    margin:10px;
+    width: 70%;
+    height: 120px;
+    margin: 10px;
 }
 .slide4border button{
     position:absolute;
-    margin-left: 80px;
-    width:80px;
+    margin-left: 110px;
+    width: 110px;
     border-radius:5px;
-    height:40px;
-    font-size:15px;
+    height: 60px;
+    font-size: 22px;
     padding:0;
     color:#fff;
-    margin-top: 15px;
+    margin-top: 25px;
     background-color:#1b7f39;
     LINE-HEIGHT: 20PX;
 }
 .slide4border span{
     color:#333;
-    width:230px;
-    height:100px;
+    width: 320px;
+    height: 84px;
     position:absolute;
     margin-top:15px;
-    margin-left:-165px;
-    font-size: 13px;
-    text-align:left
+    margin-left: -220px;
+    font-size: 21px;
+    text-align:left;
+    word-break: break-word;
+    overflow:hidden;
+    vertical-align: middle;
 }
 img.icon{
     border: 1px solid #222;
