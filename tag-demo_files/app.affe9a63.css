@@ -1223,16 +1223,16 @@ h2 {
   }
 
 #slide5border,#slide7border,#slide9border{
-    height: 530px;
-    width: 460px;
+    height: 650px;
+    width: 560px;
     background: #fff;
     color: #aaa;
     border-radius: 10px;
     margin-top: 130px;
 }
-#slide5border h1,#slide7border h1,#slide9border h1{ 
+#slide5border h1,#slide7border h1,#slide9border h1{
     color: #000;
-    margin-top:90px;
+    margin-top: 120px;
 }
 
 #slide5 .next-page-button,#slide7 .next-page-button,#slide9 .next-page-button{
@@ -1294,7 +1294,7 @@ img.icon{
 
 #display,#display2,#display3{
     padding:0 20px;
-    font-size: 23px;
+    font-size: 26px;
 }
 
 
@@ -1305,4 +1305,10 @@ button#buttonNext2{
     height: 70px;
     border-radius: 100px;
     margin-top: 60px;
+}
+.ads_result{
+    margin: -20px 130px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
 }
