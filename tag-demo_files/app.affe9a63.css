@@ -625,7 +625,7 @@ h2 {
 
 .industry {
     width: 70%;
-    height: 130px;
+    height: 150px;
     border: 2px solid #4285f4;
     border-radius: 20px;
     padding: 10px;
@@ -800,7 +800,7 @@ h2 {
     font-size: 50px;
     padding: 20px;
     font-weight: normal;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 #slide3 .next-page-button {
@@ -1110,7 +1110,7 @@ h2 {
     margin-top: 60px;
     margin-left: -230px;
     width: 330px;
-    height: 50px;
+    height: 70px;
     overflow: hidden;
     text-align: left;
 }
@@ -1281,9 +1281,9 @@ h2 {
 img.icon{
     border: 1px solid #222;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
-    margin: 15px 365px;
+    width: auto;
+    height: 110px;
+    margin: 20px 360px;
 }
 
 .footnote{
