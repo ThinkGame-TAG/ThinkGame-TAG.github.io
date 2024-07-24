@@ -612,7 +612,7 @@ h2 {
 }
 
 .next-page-button {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 48px;
     padding: 0 30px;
@@ -620,7 +620,7 @@ h2 {
     background-color: #A8DAB5;
     color: #0D652D;
     border: 0;
-    border-radius: 30px
+    border-radius: 100px;
 }
 
 .industry {
@@ -1222,12 +1222,12 @@ h2 {
   }
 
 #slide5border,#slide7border,#slide9border{
-    height: 430px;
-    width: 360px;
+    height: 530px;
+    width: 460px;
     background: #fff;
     color: #aaa;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 130px;
 }
 #slide5border h1,#slide7border h1,#slide9border h1{ 
     color: #000;
@@ -1238,6 +1238,9 @@ h2 {
     color: #eee;
     background-color: #1f8e3f;
     font-weight: normal;
+    height: 70px;
+    width: 200px;
+    margin: 50px;
 }
 
 .slide4border{
@@ -1284,12 +1287,13 @@ img.icon{
 
 .footnote{
     color:#777;
-    font-size:12px
+    font-size: 18px;
 }
 
 
 #display,#display2,#display3{
-    padding:0 20px
+    padding:0 20px;
+    font-size: 23px;
 }
 
 
